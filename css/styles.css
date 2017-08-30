@@ -163,5 +163,14 @@ body{
   padding-left: 20px;
   padding-right: 20px;
   border-style: ridge;
-  border-color: #663300;  
+  border-color: #663300;
+}
+
+.pay {
+  text-align: center;
+  color: white;
+  background-color: #663300;
+  margin-top: 10px;
+  padding-top: 25px;
+  font-style: italic;
 }
