@@ -39,6 +39,8 @@ body{
   -moz-border-radius: 9px 9px 9px 9px;
   -webkit-border-radius: 9px 9px 9px 9px;
   border: 11px double yellow;
+  padding-left: 10px;
+  padding-righ: 10px;
 
 }
 
@@ -155,4 +157,11 @@ body{
 #button:hover span:after {
   opacity: 1;
   right: 0;
+}
+
+.person1 {
+  padding-left: 20px;
+  padding-right: 20px;
+  border-style: ridge;
+  border-color: #663300;  
 }
