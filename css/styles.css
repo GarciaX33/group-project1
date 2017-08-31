@@ -12,7 +12,7 @@
 
 }
 
-.pizza-info-toggle {
+.info-toggle {
   display: none;
 }
 
@@ -40,7 +40,7 @@ body{
   -webkit-border-radius: 9px 9px 9px 9px;
   border: 11px double yellow;
   padding-left: 10px;
-  padding-righ: 10px;
+  padding-right: 10px;
 
 }
 
