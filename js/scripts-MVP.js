@@ -1,7 +1,13 @@
 var nameArray = []
 var costArray = []
 
-
+  function checkIfEmpty() {
+    var check;
+    if (check == "" || check < 0) {
+      alert("Please enter a number greater than 0");
+      return false;
+    };
+  }
 
     function addName() {
       var check;

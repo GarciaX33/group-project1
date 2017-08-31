@@ -53,13 +53,13 @@
      <h5>Please enter the price of each meal item.</h5><br>
      <div class="Meal">
        Appetizer:<br>
-       <input type="text" name="appetizer"><br>
+       <input type="number" name="appetizer" min="0" class="food"><br>
      Entree:<br>
-       <input type="text" name="Entree"><br>
+       <input type="number" name="Entree" min="0" class="food"><br>
        Beverage:<br>
-     <input type="text" name="beverage"><br>
+     <input type="number" name="beverage" min="0" class="food"><br>
        Dessert:<br>
-       <input type="text" name="dessert"><br>
+       <input type="number" name="dessert" min="0" class="food"><br>
      </div>
    </div>
    <div class="Person2 col-md-4">
@@ -73,13 +73,13 @@
      <h5>Please enter the price of each meal item.</h5><br>
      <div class="Meal">
        Appetizer:<br>
-       <input type="text" name="appetizer"><br>
+       <input type="number" name="appetizer" min="0" class="food"><br>
      Entree:<br>
-       <input type="text" name="Entree"><br>
+       <input type="number" name="Entree" min="0" class="food"><br>
        Beverage:<br>
-     <input type="text" name="beverage"><br>
+     <input type="number" name="beverage" min="0" class="food"><br>
        Dessert:<br>
-       <input type="text" name="dessert"><br>
+       <input type="number" name="dessert" min="0" class="food"><br>
      </div>
    </div>
    <div class="Person3 col-md-4">
@@ -93,13 +93,13 @@
      <h5>Please enter the price of each meal item.</h5><br>
      <div class="Meal">
        Appetizer:<br>
-       <input type="text" name="appetizer"><br>
+       <input type="number" name="appetizer" min="0" class="food"><br>
      Entree:<br>
-       <input type="text" name="Entree"><br>
+       <input type="number" name="Entree" min="0" class="food"><br>
        Beverage:<br>
-     <input type="text" name="beverage"><br>
+     <input type="number" name="beverage" min="0" class="food"><br>
        Dessert:<br>
-       <input type="text" name="dessert"><br>
+       <input type="number" name="dessert" min="0" class="food"><br>
      </div>
    </div>
    </div>
@@ -108,15 +108,15 @@
      <h2>Pay the Bill</h2>
        <div class="row">
          <div class"P1 col-md-4">
-           <h5><span class="diner1"></span></h5>
+           <h5><span id="diner1CurrentTotal"></span></h5>
            <h4>Current Total<span class="d1total"></span></h4>
          </div>
          <div class"P1 col-md-4">
-           <h5><span class="diner2"></span></h5>
+           <h5><span id="diner2CurrentTotal"></span></h5>
            <h4>Current Total<span class="d2total"></span></h4>
          </div>
          <div class"P1 col-md-4">
-           <h5><span class="diner3"></span></h5>
+           <h5><span id="diner3CurrentTotal"></span></h5>
            <h4>Current Total<span class="d3total"></span></h4>
          </div>
        </div>
@@ -124,9 +124,9 @@
 
  </div>
 
+</form>
+</div>
 
-</div>
-</div>
 
 </body>
 
