@@ -1,5 +1,5 @@
 // TODO -
-// Split Cost of all
+// truncate all entries
 //  Add Tip and Tax Functionality.
 // "Click to show details" from pizza project
 // Prevent blank entries from joining innerHTML of diner
