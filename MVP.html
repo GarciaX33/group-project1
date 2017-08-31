@@ -42,13 +42,13 @@
  <!--Diners' Input form-->
  <form id="BillSplit">
    <div class="row">
-   <div class="Person1 col-md-4"> <!-- Person 1 Div -->
+   <div class=" col-md-4"> <!-- Person 1 Div -->
      <div>
-       <h3>Diner 1</h3>
+       <h3 >Diner 1</h3>
      </div>
      <div class="Name">
        Name:<br>
-       <input type="text" name="diner1" id="fname">
+       <input type="text" name="diner1" id="d1name">
      </div>
      <h5>Please enter the price of each meal item.</h5><br>
      <div class="Meal">
@@ -68,7 +68,7 @@
      </div>
      <div class="Name">
        Name:<br>
-       <input type="text" name="diner2">
+       <input type="text" name="diner2" id="d2name">
      </div>
      <h5>Please enter the price of each meal item.</h5><br>
      <div class="Meal">
@@ -88,7 +88,7 @@
      </div>
      <div class="Name">
        Name:<br>
-       <input type="text" name="diner3">
+       <input type="text" name="diner3" id="d3name">
      </div>
      <h5>Please enter the price of each meal item.</h5><br>
      <div class="Meal">
@@ -109,13 +109,13 @@
        <div class="row">
          <div class"P1 col-md-4">
            <h5></h5>
-           <h4>Diner 1 Total: <span id="diner1Total"></span><br></h4><h5><span id="diner1CurrentTotal"></span></h5>
+           <h4><span id="person1">Diner 1</span> Total: <span id="diner1Total"></span><br></h4><h5><span id="diner1CurrentTotal" ></span></h5>
          </div>
-         <div class"P1 col-md-4">
-           <h4>Diner 2 Total: <span id="diner2Total"></span><br></h4><h5><span id="diner2CurrentTotal"></span></h5>
+         <div class"P2 col-md-4">
+           <h4><span id="person2">Diner 2 </span>Total: <span id="diner2Total"></span><br></h4><h5><span id="diner2CurrentTotal"></span></h5>
          </div>
-         <div class"P1 col-md-4">
-           <h4>Diner 3 Total: <span id="diner3Total"></span><br></h4><h5><span id="diner3CurrentTotal"></span></h5>
+         <div class"P3 col-md-4">
+           <h4><span id="person3">Diner 3</span> Total: <span id="diner3Total"></span><br></h4><h5><span id="diner3CurrentTotal"></span></h5>
          </div>
        </div>
        <input type=button onclick="splitTheBill()" id="button" value="Split the Bill!"/>

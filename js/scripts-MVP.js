@@ -1,13 +1,14 @@
 // TODO -
-// truncate all entries
-//  Add Tip and Tax Functionality.
 // "Click to show details" from pizza project
+//  Add Tip and Tax Functionality.
+// truncate all entries
 // Prevent blank entries from joining innerHTML of diner
 
 var nameArray = [];
 var costArrayDiner1 = [];
 var costArrayDiner2 = [];
 var costArrayDiner3 = [];
+
 
   function checkIfEmpty() {
     var check;
@@ -16,6 +17,24 @@ var costArrayDiner3 = [];
       return false;
     };
   }
+
+  $(document).ready(function(){
+
+       $("#d1name").keyup(function(){
+           d1namebottom = ($(this).val())
+          $("#person1").text(d1namebottom)
+       });
+       $("#d2name").keyup(function(){
+           d2namebottom = ($(this).val())
+          $("#person2").text(d2namebottom)
+       });
+       $("#d3name").keyup(function(){
+           d3namebottom = ($(this).val())
+           $("#person3").text(d3namebottom)
+
+
+       });
+   })
 
   function addFoodItemDiner1() {
     var y = document.getElementById("diner1CurrentTotal");
