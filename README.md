@@ -26,9 +26,9 @@ GarciaX33 GitHub Profile
 
 * Adobe Photoshop
 * Atom
-* Google Chrome
-* GitHub
+* Chrome
 * Git
+* GitHub
 
 ### License
 
