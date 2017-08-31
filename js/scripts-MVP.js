@@ -1,3 +1,9 @@
+// TODO -
+// Split Cost of all
+//  Add Tip and Tax Functionality.
+// "Click to show details" from pizza project
+// Prevent blank entries from joining innerHTML of diner
+
 var nameArray = [];
 var costArray = [];
 var costArrayDiner1 = [];
@@ -11,6 +17,7 @@ var costArrayDiner3 = [];
       return false;
     };
   }
+
   function addFoodItemDiner1() {
     var y = document.getElementById("diner1CurrentTotal");
     costArrayDiner1.push(document.getElementById("d1f1").value);
@@ -22,10 +29,11 @@ var costArrayDiner3 = [];
 
     var beforeTipandTax = costArrayDiner1.reduce(subTotal, 0);
     var z = document.getElementById("diner1Total");
-    z.innerHTML = costArrayDiner1.reduce(subTotal, 0);
+    z.innerHTML = ('$')+costArrayDiner1.reduce(subTotal, 0);
+
+}
 
 
-  }
 
   function addFoodItemDiner2() {
     var y = document.getElementById("diner2CurrentTotal");
@@ -36,7 +44,7 @@ var costArrayDiner3 = [];
     y.innerHTML = costArrayDiner2.join('<br/>');
 
     var z = document.getElementById("diner2Total");
-    z.innerHTML = costArrayDiner2.reduce(subTotal, 0);
+    z.innerHTML = ('$')+costArrayDiner2.reduce(subTotal, 0);
   }
   function addFoodItemDiner3() {
     var y = document.getElementById("diner3CurrentTotal");
@@ -47,7 +55,7 @@ var costArrayDiner3 = [];
     y.innerHTML = costArrayDiner3.join('<br/>');
 
     var z = document.getElementById("diner3Total");
-    z.innerHTML = costArrayDiner3.reduce(subTotal, 0);
+    z.innerHTML = ('$')+costArrayDiner3.reduce(subTotal, 0);
   }
     function addName() {
       var check;
