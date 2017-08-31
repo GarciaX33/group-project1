@@ -1,5 +1,6 @@
 var nameArray = [];
 var costArray = [];
+var costArrayDiner1 = [];
 
   function checkIfEmpty() {
     var check;
