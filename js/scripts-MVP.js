@@ -5,7 +5,6 @@
 // Prevent blank entries from joining innerHTML of diner
 
 var nameArray = [];
-var costArray = [];
 var costArrayDiner1 = [];
 var costArrayDiner2 = [];
 var costArrayDiner3 = [];
@@ -129,18 +128,29 @@ var costArrayDiner3 = [];
       return accounting.toFixed(num, decimal);
     }
 
-    function splitTheBill(item) {
-      priceOfMeal = costArray.reduce(subTotal, 0);
-      beforeTipandTax = (costArray.reduce(subTotal, 0) / nameArray.length);
-      priceOfMealSplit = truncate(beforeTipandTax)
-      tipAmount = addTip(beforeTipandTax) / 100
-      taxAmount = addTax(beforeTipandTax) / 100
-      grossTotal = truncate(beforeTipandTax + taxAmount + tipAmount);
-      grandTotal = document.getElementById("priceOfMeal").innerHTML = "$" + priceOfMeal
-      document.getElementById("cost-of-food").innerHTML = "$" + priceOfMealSplit
-      document.getElementById("tip").innerHTML = "$" + truncate(tipAmount)
-      document.getElementById("tax").innerHTML = "$" + truncate(taxAmount)
-      document.getElementById("sumTotal").innerHTML = "$" + grossTotal;
 
+    // OLD
+    // function splitTheBill(item) {
+    //   priceOfMeal = costArray.reduce(subTotal, 0);
+    //   beforeTipandTax = (costArray.reduce(subTotal, 0) / nameArray.length);
+    //   priceOfMealSplit = truncate(beforeTipandTax)
+    //   tipAmount = addTip(beforeTipandTax) / 100
+    //   taxAmount = addTax(beforeTipandTax) / 100
+    //   grossTotal = truncate(beforeTipandTax + taxAmount + tipAmount);
+    //   grandTotal = document.getElementById("priceOfMeal").innerHTML = "$" + priceOfMeal
+    //   document.getElementById("cost-of-food").innerHTML = "$" + priceOfMealSplit
+    //   document.getElementById("tip").innerHTML = "$" + truncate(tipAmount)
+    //   document.getElementById("tax").innerHTML = "$" + truncate(taxAmount)
+    //   document.getElementById("sumTotal").innerHTML = "$" + grossTotal;
+    //
+    //
+    // };
 
-    };
+  function splitTheBill(item) {
+    d1=costArrayDiner1.reduce(subTotal, 0);
+    d2=costArrayDiner2.reduce(subTotal, 0);
+    d3=costArrayDiner3.reduce(subTotal, 0);
+    costArray = d1+d2+d3
+    document.getElementById("billSplit").innerHTML = "$" + truncate(costArray/3, 0)
+
+  }
