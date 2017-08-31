@@ -10,16 +10,9 @@ var costArrayDiner2 = [];
 var costArrayDiner3 = [];
 
 
-  function checkIfEmpty() {
-    var check;
-    if (check == "" || check < 0) {
-      alert("Please enter a number greater than 0");
-      return false;
-    };
-  }
+
 
   $(document).ready(function(){
-
        $("#d1name").keyup(function(){
            d1namebottom = ($(this).val())
           $("#person1").text(d1namebottom)
@@ -34,6 +27,7 @@ var costArrayDiner3 = [];
 
 
        });
+
    })
 
   function addFoodItemDiner1() {
