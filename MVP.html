@@ -42,7 +42,7 @@
  <!--Diners' Input form-->
  <form id="BillSplit">
    <div class="row">
-   <div class="Person1 col-md-4">
+   <div class="Person1 col-md-4"> <!-- Person 1 Div -->
      <div>
        <h3>Diner 1</h3>
      </div>
@@ -53,14 +53,14 @@
      <h5>Please enter the price of each meal item.</h5><br>
      <div class="Meal">
        Appetizer:<br>
-       <input type="number" name="appetizer" min="0" onclick="addFoodItem()" class="food"><br>
+       <input type="number" name="appetizer" min="0" class="food" id="d1f1"><br>
      Entree:<br>
-       <input type="number" name="Entree" min="0" class="food"><br>
+       <input type="number" name="Entree" min="0" class="food" id="d1f2"><br>
        Beverage:<br>
-     <input type="number" name="beverage" min="0" class="food"><br>
+     <input type="number" name="beverage" min="0" class="food" id="d1f3"><br>
        Dessert:<br>
-       <input type="number" name="dessert" min="0" class="food"><br>
-     </div>
+       <input type="number" name="dessert" min="0" class="food" id="d1f4"><br>
+     </div><input type=button onclick="addFoodItemDiner1()" value="Add" />
    </div>
    <div class="Person2 col-md-4">
      <div>
@@ -73,14 +73,14 @@
      <h5>Please enter the price of each meal item.</h5><br>
      <div class="Meal">
        Appetizer:<br>
-       <input type="number" name="appetizer" min="0" class="food"><br>
+       <input type="number" name="appetizer" min="0" class="food" id="d2f1"><br>
      Entree:<br>
-       <input type="number" name="Entree" min="0" class="food"><br>
+       <input type="number" name="Entree" min="0" class="food" id="d2f2"><br>
        Beverage:<br>
-     <input type="number" name="beverage" min="0" class="food"><br>
+     <input type="number" name="beverage" min="0" class="food" id="d2f3"><br>
        Dessert:<br>
-       <input type="number" name="dessert" min="0" class="food"><br>
-     </div>
+       <input type="number" name="dessert" min="0" class="food" id="d2f4"><br>
+     </div><input type=button onclick="addFoodItemDiner2()" value="Add" />
    </div>
    <div class="Person3 col-md-4">
      <div>
@@ -93,14 +93,14 @@
      <h5>Please enter the price of each meal item.</h5><br>
      <div class="Meal">
        Appetizer:<br>
-       <input type="number" name="appetizer" min="0" class="food"><br>
+       <input type="number" name="appetizer" min="0" class="food" id="d3f1"><br>
      Entree:<br>
-       <input type="number" name="Entree" min="0" class="food"><br>
+       <input type="number" name="Entree" min="0" class="food" id="d3f2"><br>
        Beverage:<br>
-     <input type="number" name="beverage" min="0" class="food"><br>
+     <input type="number" name="beverage" min="0" class="food" id="d3f3"><br>
        Dessert:<br>
-       <input type="number" name="dessert" min="0" class="food"><br>
-     </div>
+       <input type="number" name="dessert" min="0" class="food" id="d3f4"><br>
+     </div><input type=button onclick="addFoodItemDiner3()" value="Add" />
    </div>
    </div>
      <div class="pay">
@@ -108,17 +108,14 @@
      <h2>Pay the Bill</h2>
        <div class="row">
          <div class"P1 col-md-4">
-           <h6><span id="d1NameText"></span>test</h6>
-           <h5><span id="diner1CurrentTotal"></span></h5>
-           <h4>Current Total<span class="d1total"></span></h4>
+           <h5></h5>
+           <h4>Diner 1 Total: <span id="diner1Total"></span><br></h4><h5><span id="diner1CurrentTotal"></span></h5>
          </div>
          <div class"P1 col-md-4">
-           <h5><span id="diner2CurrentTotal"></span></h5>
-           <h4>Current Total<span class="d2total"></span></h4>
+           <h4>Diner 2 Total: <span id="diner2Total"></span><br></h4><h5><span id="diner2CurrentTotal"></span></h5>
          </div>
          <div class"P1 col-md-4">
-           <h5><span id="diner3CurrentTotal"></span></h5>
-           <h4>Current Total<span class="d3total"></span></h4>
+           <h4>Diner 3 Total: <span id="diner3Total"></span><br></h4><h5><span id="diner3CurrentTotal"></span></h5>
          </div>
        </div>
      </div>

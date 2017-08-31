@@ -1,6 +1,8 @@
 var nameArray = [];
 var costArray = [];
 var costArrayDiner1 = [];
+var costArrayDiner2 = [];
+var costArrayDiner3 = [];
 
   function checkIfEmpty() {
     var check;
@@ -9,7 +11,44 @@ var costArrayDiner1 = [];
       return false;
     };
   }
+  function addFoodItemDiner1() {
+    var y = document.getElementById("diner1CurrentTotal");
+    costArrayDiner1.push(document.getElementById("d1f1").value);
+    costArrayDiner1.push(document.getElementById("d1f2").value);
+    costArrayDiner1.push(document.getElementById("d1f3").value);
+    costArrayDiner1.push(document.getElementById("d1f4").value);
+    y.innerHTML = costArrayDiner1.join('<br/>');
 
+
+    var beforeTipandTax = costArrayDiner1.reduce(subTotal, 0);
+    var z = document.getElementById("diner1Total");
+    z.innerHTML = costArrayDiner1.reduce(subTotal, 0);
+
+
+  }
+
+  function addFoodItemDiner2() {
+    var y = document.getElementById("diner2CurrentTotal");
+    costArrayDiner2.push(document.getElementById("d2f1").value);
+    costArrayDiner2.push(document.getElementById("d2f2").value);
+    costArrayDiner2.push(document.getElementById("d2f3").value);
+    costArrayDiner2.push(document.getElementById("d2f4").value);
+    y.innerHTML = costArrayDiner2.join('<br/>');
+
+    var z = document.getElementById("diner2Total");
+    z.innerHTML = costArrayDiner2.reduce(subTotal, 0);
+  }
+  function addFoodItemDiner3() {
+    var y = document.getElementById("diner3CurrentTotal");
+    costArrayDiner3.push(document.getElementById("d3f1").value);
+    costArrayDiner3.push(document.getElementById("d3f2").value);
+    costArrayDiner3.push(document.getElementById("d3f3").value);
+    costArrayDiner3.push(document.getElementById("d3f4").value);
+    y.innerHTML = costArrayDiner3.join('<br/>');
+
+    var z = document.getElementById("diner3Total");
+    z.innerHTML = costArrayDiner3.reduce(subTotal, 0);
+  }
     function addName() {
       var check;
       check = document.getElementById("inputName").value;
